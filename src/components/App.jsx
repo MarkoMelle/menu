@@ -1,9 +1,10 @@
 import React from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   NavLink,
+  Switch,
 } from 'react-router-dom';
 import './App.css';
 import HomePage from './HomePage';
@@ -24,6 +25,10 @@ export default function App() {
             <Route path='/timeattack' element={<TimeAttackPage />} />
             <Route path='/forza' element={<ForzaPage />} />
             <Route path='*' element={<h1>Not Found</h1>} />
+            {/* <Route path='/' element={<HomePage />} />
+            <Route path='/drift' element={<DriftPage />} />
+            <Route path='/timeattack' element={<TimeAttackPage />} />
+            <Route path='/forza' element={<ForzaPage />} /> */}
           </Routes>
         </div>
       </div>
